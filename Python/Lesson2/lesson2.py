@@ -31,6 +31,10 @@ print("Набор произведений чисел от 1 до N: " + str(arr
 n = int(input("Введите число n: "))
 list = [round((1 + 1/i)**i, 2) for i in range(1, n+1)]
 print(list)
+sum = 0
+for i in list:
+    sum += i
+print(f"Сумма чисел: {sum}")
 
 # Реализуйте алгоритм перемешивания списка.
 import random
